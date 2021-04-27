@@ -24,7 +24,7 @@ d3.selectAll('body').on('change', updateCurves);
 
 
 d3.json("./static/allProductionData.json").then((data) =>{
-    console.log(data);
+    //console.log(data);
 });
 
 function updateCurves(){
@@ -34,6 +34,7 @@ function updateCurves(){
     console.log(dropdownMenuID);
     console.log(selectedOption);
     d3.json("./static/allProductionData.json").then((data) =>{ //THIS WORKS!!!
+    //console.log(data);
       var site_oil = [];
       var site_gas = [];
       var site_water = [];
@@ -52,10 +53,10 @@ function updateCurves(){
           site_date.push(site[1]) 
       } resolve()}));
 
-        console.log(site_oil);
-        console.log(site_gas)
-        console.log(site_water);
-        console.log(site_date)
+        //console.log(site_oil);
+        //console.log(site_gas)
+        //console.log(site_water);
+        //console.log(site_date)
 
         var dataOil = [{
           x: site_date,
